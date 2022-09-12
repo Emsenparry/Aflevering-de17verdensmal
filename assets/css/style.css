@@ -1,26 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Balinese:wght@400;700&display=swap%27");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;600&display=swap%27");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Noto", sans-serif;
 }
 
 #mother {
-  max-width: 80vw;
+  max-width: 70vw;
   margin: auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1em;
 }
 #mother article {
-  background-color: red;
+  background-color: #E5243B;
+}
+#mother article h2, #mother article p {
+  margin: 1em 0 0.5em 0;
+}
+#mother article h2 {
+  font-family: "Rubik", sans-serif;
+  margin-left: 0.5em;
+}
+#mother article p {
+  font-size: 0.9vw;
+  margin-left: 1em;
 }
 #mother article .container {
   display: flex;
   justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 #mother article .container img {
-  width: 50%;
-}
-#mother article h2, #mother article p {
-  margin: 1em 0 0.5em 1em;
+  width: 30%;
 }/*# sourceMappingURL=style.css.map */

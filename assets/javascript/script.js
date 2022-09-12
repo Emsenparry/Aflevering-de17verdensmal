@@ -16,7 +16,7 @@ const getData = () => {
 
         // console.log("apiData", apiData);
     })
-    .catch((error) => {
+    .catch((error) => { //Error catching
 
         console.error(error);
 
