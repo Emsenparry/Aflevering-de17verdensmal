@@ -12,23 +12,19 @@
   margin: auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1em;
 }
-#mother article {
-  background-color: #bbb;
-  height: 30vh;
+#mother figure {
+  height: 40vh;
 }
-#mother article h2 {
-  font-family: "Rubik", sans-serif;
-  font-size: 1.3vw;
-  margin-left: 0.5em;
-  margin: 0.5em 0 0.5em 0.5em;
-}
-#mother article .container {
+#mother figure .container {
   display: flex;
   justify-content: center;
 }
-#mother article .container img {
-  width: 30%;
-  margin: auto;
+#mother figure .container img {
+  width: 40%;
+  margin-top: 2em;
+}
+#mother figure h2 {
+  margin: 1em;
+  font-size: 1.2em;
 }/*# sourceMappingURL=style.css.map */

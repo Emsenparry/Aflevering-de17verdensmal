@@ -1,4 +1,4 @@
-// @use "colors" as c;
+@use "colors" as c;
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Balinese:wght@400;700&display=swap%27');
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;600&display=swap%27');
 
@@ -15,27 +15,20 @@
     margin: auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1em;
-    article{
-        background-color: #bbb;
-        height: 30vh;
-        h2{
-            font-family: 'Rubik', sans-serif;
-            font-size: 1.3vw;
-            margin-left: 0.5em;
-            margin: 0.5em 0 0.5em 0.5em;
-        }
+    figure{
+        height: 40vh;
         .container{
             display: flex;
             justify-content: center;
             img{
-            width: 30%;
-            margin: auto; 
+                width: 40%;
+                margin-top: 2em;
+            }
         }
-        }      
+        h2{
+            margin: 1em;
+            font-size: 1.2em;
+        }
     }
-    // article:nth-child(1){
-    //     background-color: $Icon-fattigdom;
-    // }
     
 }

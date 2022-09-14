@@ -29,7 +29,7 @@ const getData = () => {
 };
 
 const getDetail = (id) => {
-    console.log(id);
+console.log(id);
 let idData = "";
     
 const apiendPoint = `https://api.mediehuset.net/sdg/goals/${id}`;
@@ -53,16 +53,16 @@ const apiendPoint = `https://api.mediehuset.net/sdg/goals/${id}`;
 
 const renderCards = (card, i) => {
 
-const {id, title, byline, icon} = card
+const {id, title, byline, icon, color} = card
 // console.log("card", card);
 
 document.getElementById('mother').innerHTML += `
-<article onclick='getDetail(${id})'>
+<figure onclick='getDetail(${id})'style='background-color: #${card.color}'>
 <h2>${id + ' ' + title}</h2>
 <div class="container">
 <img src='data:image/svg+xml; utf8,${icon}' alt="icon">
 </div>
-</article>
+</figure>
 `;
 };
 
@@ -74,11 +74,12 @@ const {id, title, byline, icon} = card
 console.log("card", card);
     
 document.getElementById('mother').innerHTML = `
-<article>
-<h2>${id + ' ' + title}</h2>
-<div class="container">
+<figure class="fig-main">
+<h2>${title}</h2>
 <img src='data:image/svg+xml; utf8,${icon}' alt="icon">
-</div>
-</article>
+<figcaption>
+<p>${byline}</p>
+</figcaption>
+</figure>
 `;
 };
