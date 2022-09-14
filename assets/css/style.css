@@ -8,32 +8,27 @@
 }
 
 #mother {
-  max-width: 70vw;
+  max-width: 80vw;
   margin: auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1em;
 }
 #mother article {
-  background-color: #E5243B;
-}
-#mother article h2, #mother article p {
-  margin: 1em 0 0.5em 0;
+  background-color: #bbb;
+  height: 30vh;
 }
 #mother article h2 {
   font-family: "Rubik", sans-serif;
+  font-size: 1.3vw;
   margin-left: 0.5em;
-}
-#mother article p {
-  font-size: 0.9vw;
-  margin-left: 1em;
+  margin: 0.5em 0 0.5em 0.5em;
 }
 #mother article .container {
   display: flex;
   justify-content: center;
-  flex-direction: row;
-  flex-wrap: wrap;
 }
 #mother article .container img {
   width: 30%;
+  margin: auto;
 }/*# sourceMappingURL=style.css.map */

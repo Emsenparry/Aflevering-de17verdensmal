@@ -1,3 +1,4 @@
+// @use "colors" as c;
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Balinese:wght@400;700&display=swap%27');
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;600&display=swap%27');
 
@@ -10,35 +11,31 @@
 
 
 #mother{
-    max-width: 70vw;
+    max-width: 80vw;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1em;
     article{
-        background-color: #E5243B;
-        h2, p{
-        margin: 1em 0 0.5em 0;
-        }
+        background-color: #bbb;
+        height: 30vh;
         h2{
             font-family: 'Rubik', sans-serif;
+            font-size: 1.3vw;
             margin-left: 0.5em;
-        }
-        p{
-            font-size: 0.9vw;
-            margin-left: 1em;
+            margin: 0.5em 0 0.5em 0.5em;
         }
         .container{
             display: flex;
             justify-content: center;
-            flex-direction: row;
-            flex-wrap: wrap;
             img{
-            width: 30%;  
+            width: 30%;
+            margin: auto; 
         }
-
-        }
-         
+        }      
     }
+    // article:nth-child(1){
+    //     background-color: $Icon-fattigdom;
+    // }
     
 }
