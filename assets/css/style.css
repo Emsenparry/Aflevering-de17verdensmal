@@ -7,6 +7,24 @@
   font-family: "Noto", sans-serif;
 }
 
+.art-main {
+  display: grid;
+  justify-content: center;
+  font-family: "Rubik", sans-serif;
+}
+.art-main h2 {
+  font-size: 3vw;
+}
+.art-main h3 {
+  font-size: 1.3vw;
+}
+.art-main img {
+  width: 50%;
+}
+.art-main figcaption {
+  margin-top: 2em;
+}
+
 #mother {
   max-width: 80vw;
   margin: auto;
@@ -19,10 +37,11 @@
 #mother figure .container {
   display: flex;
   justify-content: center;
+  height: 60%;
 }
 #mother figure .container img {
   width: 40%;
-  margin-top: 2em;
+  z-index: 1;
 }
 #mother figure h2 {
   margin: 1em;

@@ -9,6 +9,24 @@
     font-family: 'Noto', sans-serif;
 }
 
+.art-main{
+    display: grid;
+    justify-content: center;
+    font-family: 'Rubik', sans-serif;
+    h2{
+        font-size: 3vw;
+    }
+    h3{
+        font-size: 1.3vw;
+    }
+    img{
+        width: 50%;
+    }
+    figcaption{
+        margin-top: 2em;
+    }
+}
+
 
 #mother{
     max-width: 80vw;
@@ -20,9 +38,10 @@
         .container{
             display: flex;
             justify-content: center;
+            height: 60%;
             img{
                 width: 40%;
-                margin-top: 2em;
+                z-index: 1;
             }
         }
         h2{

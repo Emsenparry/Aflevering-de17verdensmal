@@ -14,7 +14,7 @@ const getData = () => {
         // console.log("data", data);
         apiData.push(...data.items);
 
-        // console.log("apiData", apiData);
+        console.log("apiData", apiData);
     })
     .catch((error) => { //Error catching
 
@@ -23,9 +23,16 @@ const getData = () => {
     })
     .finally(
         () => {
-            document.getElementById("mother").innerHTML = "";
-             apiData.map((card, i) => renderCards(card, i))
+            renderContent();
     });
+};
+
+const renderContent = () => {
+    if (apiData.length === 0){
+        getData();
+    }
+    document.getElementById("mother").innerHTML = "";
+    apiData.map((card, i) => renderCards(card, i))
 };
 
 const getDetail = (id) => {
@@ -39,7 +46,7 @@ const apiendPoint = `https://api.mediehuset.net/sdg/goals/${id}`;
 
     })
     .then((data) => {
-        console.log("DetailData", data);
+        // console.log("DetailData", data);
         idData = data.item;
     })
     .catch((error) => { //Error catching
@@ -53,7 +60,7 @@ const apiendPoint = `https://api.mediehuset.net/sdg/goals/${id}`;
 
 const renderCards = (card, i) => {
 
-const {id, title, byline, icon, color} = card
+const {id, title, icon, color} = card
 // console.log("card", card);
 
 document.getElementById('mother').innerHTML += `
@@ -70,16 +77,17 @@ getData();
 
 const renderDetails = (card, i) => {
 
-const {id, title, byline, icon} = card
+const {title, byline, image, description} = card
 console.log("card", card);
-    
+
 document.getElementById('mother').innerHTML = `
-<figure class="fig-main">
+<article class="art-main">
 <h2>${title}</h2>
-<img src='data:image/svg+xml; utf8,${icon}' alt="icon">
+<h3>${byline}</h3>
+<img src="${image}"></img>
 <figcaption>
-<p>${byline}</p>
+<p>${description}</p>
 </figcaption>
-</figure>
+</article>
 `;
 };
