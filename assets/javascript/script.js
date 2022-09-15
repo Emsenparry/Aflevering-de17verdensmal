@@ -32,6 +32,7 @@ const renderContent = () => {
         getData();
     }
     document.getElementById("mother").innerHTML = "";
+    document.getElementById("mother").style.gridTemplateColumns = "repeat(auto-fit, minmax(250px, 1fr))";
     apiData.map((card, i) => renderCards(card, i))
 };
 
@@ -59,7 +60,6 @@ const apiendPoint = `https://api.mediehuset.net/sdg/goals/${id}`;
 };
 
 const renderCards = (card, i) => {
-
 const {id, title, icon, color} = card
 // console.log("card", card);
 
