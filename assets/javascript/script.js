@@ -79,7 +79,7 @@ const {title, byline, image, description, targets} = card
 // console.log("card", card);
 
 document.getElementById('mother').innerHTML = `
-<article class="art-main">
+<article id="art-main">
 <img src="${image}"></img>
 <figcaption>
 <h2>${title}</h2>
