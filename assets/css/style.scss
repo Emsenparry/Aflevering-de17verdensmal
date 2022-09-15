@@ -11,19 +11,23 @@
 
 .art-main{
     display: grid;
-    justify-content: center;
+    grid-template-columns: 1fr 1fr;
     font-family: 'Rubik', sans-serif;
-    h2{
-        font-size: 3vw;
-    }
-    h3{
-        font-size: 1.3vw;
-    }
+    background-color: #bbb;
     img{
-        width: 50%;
+        width: 100%;
+        
     }
     figcaption{
-        margin-top: 2em;
+        h2{
+            font-size: 3vw;
+        }
+        h3{
+            font-size: 1.3vw;
+        }
+        p{
+            font-size: 1vw;
+        }
     }
 }
 
@@ -39,13 +43,14 @@
             display: flex;
             justify-content: center;
             height: 60%;
-            img{
+            svg{
                 width: 40%;
-                z-index: 1;
+                fill: white;
             }
         }
         h2{
             margin: 1em;
+            color: #fff;
             font-size: 1.2em;
         }
     }

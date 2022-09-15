@@ -14,7 +14,7 @@ const getData = () => {
         // console.log("data", data);
         apiData.push(...data.items);
 
-        console.log("apiData", apiData);
+        // console.log("apiData", apiData);
     })
     .catch((error) => { //Error catching
 
@@ -66,9 +66,7 @@ const {id, title, icon, color} = card
 document.getElementById('mother').innerHTML += `
 <figure onclick='getDetail(${id})'style='background-color: #${card.color}'>
 <h2>${id + ' ' + title}</h2>
-<div class="container">
-<img src='data:image/svg+xml; utf8,${icon}' alt="icon">
-</div>
+<div class="container">${icon}</div>
 </figure>
 `;
 };
@@ -77,17 +75,29 @@ getData();
 
 const renderDetails = (card, i) => {
 
-const {title, byline, image, description} = card
-console.log("card", card);
+const {title, byline, image, description, targets} = card
+// console.log("card", card);
 
 document.getElementById('mother').innerHTML = `
 <article class="art-main">
-<h2>${title}</h2>
-<h3>${byline}</h3>
 <img src="${image}"></img>
 <figcaption>
+<h2>${title}</h2>
+<h3>${byline}</h3>
 <p>${description}</p>
 </figcaption>
 </article>
+<ul>${targets.map((target) => renderTargets(target)).join('')}</ul>
 `;
+};
+
+const renderTargets = (targets) => {
+    // console.log(targets);
+    const {title, description} = targets;
+    return `
+    <li class="list">
+    <h3>${title}</h3>
+    <p>${description}</p>
+    </li>
+    `; 
 };

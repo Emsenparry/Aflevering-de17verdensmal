@@ -9,20 +9,21 @@
 
 .art-main {
   display: grid;
-  justify-content: center;
+  grid-template-columns: 1fr 1fr;
   font-family: "Rubik", sans-serif;
-}
-.art-main h2 {
-  font-size: 3vw;
-}
-.art-main h3 {
-  font-size: 1.3vw;
+  background-color: #bbb;
 }
 .art-main img {
-  width: 50%;
+  width: 100%;
 }
-.art-main figcaption {
-  margin-top: 2em;
+.art-main figcaption h2 {
+  font-size: 3vw;
+}
+.art-main figcaption h3 {
+  font-size: 1.3vw;
+}
+.art-main figcaption p {
+  font-size: 1vw;
 }
 
 #mother {
@@ -39,11 +40,12 @@
   justify-content: center;
   height: 60%;
 }
-#mother figure .container img {
+#mother figure .container svg {
   width: 40%;
-  z-index: 1;
+  fill: white;
 }
 #mother figure h2 {
   margin: 1em;
+  color: #fff;
   font-size: 1.2em;
 }/*# sourceMappingURL=style.css.map */
