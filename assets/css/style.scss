@@ -9,27 +9,6 @@
     font-family: 'Noto', sans-serif;
 }
 
-.art-main{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    font-family: 'Rubik', sans-serif;
-    background-color: #bbb;
-    img{
-        width: 100%;
-        
-    }
-    figcaption{
-        h2{
-            font-size: 3vw;
-        }
-        h3{
-            font-size: 1.3vw;
-        }
-        p{
-            font-size: 1vw;
-        }
-    }
-}
 
 
 #mother{
@@ -55,4 +34,26 @@
         }
     }
     
+}
+
+.art-main{
+    display: grid;
+    grid-template-columns: 1fr;
+    font-family: 'Rubik', sans-serif;
+    background-color: #bbb;
+    img{
+        width: 100%;
+        
+    }
+    figcaption{
+        h2{
+            font-size: 3vw;
+        }
+        h3{
+            font-size: 1.3vw;
+        }
+        p{
+            font-size: 1vw;
+        }
+    }
 }

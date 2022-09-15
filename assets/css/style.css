@@ -7,25 +7,6 @@
   font-family: "Noto", sans-serif;
 }
 
-.art-main {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  font-family: "Rubik", sans-serif;
-  background-color: #bbb;
-}
-.art-main img {
-  width: 100%;
-}
-.art-main figcaption h2 {
-  font-size: 3vw;
-}
-.art-main figcaption h3 {
-  font-size: 1.3vw;
-}
-.art-main figcaption p {
-  font-size: 1vw;
-}
-
 #mother {
   max-width: 80vw;
   margin: auto;
@@ -48,4 +29,23 @@
   margin: 1em;
   color: #fff;
   font-size: 1.2em;
+}
+
+.art-main {
+  display: grid;
+  grid-template-columns: 1fr;
+  font-family: "Rubik", sans-serif;
+  background-color: #bbb;
+}
+.art-main img {
+  width: 100%;
+}
+.art-main figcaption h2 {
+  font-size: 3vw;
+}
+.art-main figcaption h3 {
+  font-size: 1.3vw;
+}
+.art-main figcaption p {
+  font-size: 1vw;
 }/*# sourceMappingURL=style.css.map */
